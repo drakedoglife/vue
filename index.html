@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{name}}
+    </div>
+    <div id="bpp">
+        <span v-bind:title="message">鼠标停在这里以显示当前时间</span>
+    </div>
+    <div id="cpp">
+        <p v-if="seen">我看到你们了</p>
+    </div>
+    <div id="dpp">
+        <ul>
+            <li v-for="food in foods">{{food.menu}}</li>
+        </ul>
+    </div>
+    <div id="epp">
+        <p>{{message}}</p>
+        <button v-on:click="fanzhuan">click me</button>
+    </div>
+    <script src="lib/Vue.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
