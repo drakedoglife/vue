@@ -19,7 +19,8 @@ var dpp = new Vue({
             {menu: 'egg'},
             {menu: 'humber'},
             {menu: 'rice'}
-        ]
+        ],
+        colorList: 'color: red'
     }
 })
 
@@ -39,5 +40,21 @@ var epp = new Vue({
         fanzhuan: function() {
             this.message = this.message.split('').reverse().join('')
         }
+    }
+})
+
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+})
+
+var fpp = new Vue({
+    el: '#fpp',
+    data: {
+        groceryalist: [
+            {id: 0, text: '蔬菜'},
+            {id: 1, text: '奶酪'},
+            {id: 2, text: '热狗'}
+        ]
     }
 })

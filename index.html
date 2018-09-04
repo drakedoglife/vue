@@ -19,7 +19,7 @@
     </div>
     <div id="dpp">
         <ul>
-            <li v-for="food in foods">{{food.menu}}</li>
+            <li v-for="food in foods" v-bind:style="colorList">{{food.menu}}</li>
         </ul>
     </div>
     <div id="epp">
