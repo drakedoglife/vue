@@ -9,10 +9,10 @@
 </head>
 <body>
     <div id="app">
-        <todo-item :todo="item" :key="item.id" v-for="item in foods"></todo-itemv>
-    </div>
-    <div id="demo">
-        {{fullName}}
+        <h1 v-if="ok">Yes</h1>
+        <h1 v-else>No</h1>
+        <input v-model="message" placeholder="edit me" />
+        <label>{{message}}</label>
     </div>
     <script src="../lib/Vue.js"></script>
     <script src="main.js"></script>
